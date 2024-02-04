@@ -1,11 +1,39 @@
 /* Font families */
+
+/* Ibarra Real Nova */
 @font-face {
-	font-family: "";
-	font-weight: 00;
+	font-family: "Ibarra Real Nova";
+	font-weight: 400;
 	font-display: swap;
 	src:
-		url("../fonts/") format("woff2"),
-		url("../fonts/") format("woff");
+		url("./assets/fonts/ibarra-real-nova-v27-latin-regular.woff2") format("woff2"),
+		url("./assets/fonts/ibarra-real-nova-v27-latin-regular.woff") format("woff");
+}
+@font-face {
+	font-family: "Ibarra Real Nova";
+	font-weight: 700;
+	font-display: swap;
+	src:
+		url("./assets/fonts/ibarra-real-nova-v27-latin-700.woff2") format("woff2"),
+		url("./assets/fonts/ibarra-real-nova-v27-latin-700.woff") format("woff");
+}
+
+/* Public Sans */
+@font-face {
+	font-family: "Public Sans";
+	font-weight: 400;
+	font-display: swap;
+	src:
+		url("./assets/fonts/public-sans-v15-latin-regular.woff2") format("woff2"),
+		url("./assets/fonts/public-sans-v15-latin-regular.woff") format("woff");
+}
+@font-face {
+	font-family: "Public Sans";
+	font-weight: 700;
+	font-display: swap;
+	src:
+		url("./assets/fonts/public-sans-v15-latin-700.woff2") format("woff2"),
+		url("./assets/fonts/public-sans-v15-latin-700.woff") format("woff");
 }
 
 /* Mobile first */
@@ -21,7 +49,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	font-family: "", "Arial", sans-serif;
+	margin: 0;
+	font-family: "Public Sans", "Arial", sans-serif;
 }
 
 #root {
@@ -50,6 +79,10 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 32px;
+}
+
+a {
+	outline: none;
 }
 
 /* Sticky footer */
