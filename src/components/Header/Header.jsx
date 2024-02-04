@@ -1,8 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import { headerImages } from "../../images";
 import "./header.less";
+import { useState } from "react";
 
 export const Header = () => {
+	const [menu, setMenu] = useState(false);
+
+	const handleClick = () => {
+		setMenu((prev) => !prev);
+	};
+
 	return (
 		<header className="site-header">
 			<div className="container">
@@ -23,11 +30,9 @@ export const Header = () => {
 							/>
 						</picture>
 					</Link>
-
-					<button className="site-header__menu-btn" type="button">
+					<button className="site-header__menu-btn" type="button" onClick={handleClick}>
 						<img src={headerImages.hamburgerMenu} width={24} height={13} alt="Hamburger menu" />
 					</button>
-
 					<nav className="site-header__nav">
 						<ul className="site-header__list">
 							<li className="site-header__item">
@@ -59,6 +64,28 @@ export const Header = () => {
 							</li>
 						</ul>
 					</nav>
+
+					{menu && (
+						<div className="site-header__menu">
+							<ul className="site-header__menu-list">
+								<li className="site-header__menu-item">
+									<Link className="site-header__menu-link" to="/">
+										HOME
+									</Link>
+								</li>
+								<li className="site-header__menu-item">
+									<Link className="site-header__menu-link" to="/portfolio">
+										PORTFOLIO
+									</Link>
+								</li>
+								<li className="site-header__menu-item">
+									<Link className="site-header__menu-link" to="/contact">
+										CONTACT ME
+									</Link>
+								</li>
+							</ul>
+						</div>
+					)}
 				</div>
 			</div>
 		</header>

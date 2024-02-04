@@ -1,13 +1,14 @@
 @import "../../assets/mixins/mixin.less";
 
+// Site-header styles begin
+
 .site-header {
 	padding: 30px 0;
 }
 
 .site-header__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	position: relative;
+	.flex-box();
 }
 
 .site-header__logo {
@@ -40,6 +41,7 @@
 	letter-spacing: 2px;
 	line-height: 14px;
 	text-decoration: none;
+	color: #33323d;
 	.transition();
 	transition-property: color, opacity;
 	&:hover {
@@ -51,6 +53,30 @@
 	&-active {
 		color: #5fb4a2;
 	}
+}
+
+.site-header__menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 223px;
+	padding: 40px 0;
+	background-color: #33323d;
+}
+
+.site-header__menu-list {
+	.flex-box(center, center);
+	flex-direction: column;
+	row-gap: 32px;
+	.unstyled-list();
+}
+
+.site-header__menu-link {
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 14px;
+	text-decoration: none;
+	color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,3 +113,5 @@
 @media only screen and (min-width: 768px) {
 	#responsive-header.tablet();
 }
+
+// Site header styles end
