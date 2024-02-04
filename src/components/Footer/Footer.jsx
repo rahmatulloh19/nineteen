@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./footer.less";
-import { footerImages, globalImages } from "../../images";
+import { footerImages, globalImages } from "../../assets/images";
 
 export const Footer = () => {
 	return (
@@ -42,7 +42,10 @@ export const Footer = () => {
 					</ul>
 					<ul className="site-footer__social-list">
 						<li className="site-footer__social-item">
-							<a className="site-footer__social-link" href="/" target="blank">
+							<a
+								className="site-footer__social-link"
+								href="https://github.com/rahmatulloh19"
+								target="blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.github}
@@ -53,7 +56,10 @@ export const Footer = () => {
 							</a>
 						</li>
 						<li className="site-footer__social-item">
-							<a className="site-footer__social-link" href="/" target="blank">
+							<a
+								className="site-footer__social-link"
+								href="https://t.me/nineteen_uz"
+								target="blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.telegram}
@@ -64,7 +70,10 @@ export const Footer = () => {
 							</a>
 						</li>
 						<li className="site-footer__social-item">
-							<a className="site-footer__social-link" href="/" target="blank">
+							<a
+								className="site-footer__social-link"
+								href="https://www.linkedin.com/in/raxmonov-rahmatulloh"
+								target="blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.linkedin}

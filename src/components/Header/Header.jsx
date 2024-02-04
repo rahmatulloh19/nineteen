@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { headerImages } from "../../images";
+import { headerImages } from "../../assets/images";
 import "./header.less";
 import { useState } from "react";
 
