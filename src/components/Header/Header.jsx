@@ -31,7 +31,13 @@ export const Header = () => {
 						</picture>
 					</Link>
 					<button className="site-header__menu-btn" type="button" onClick={handleClick}>
-						<img src={headerImages.hamburgerMenu} width={24} height={13} alt="Hamburger menu" />
+						<img
+							className="site-header__menu-img"
+							src={menu ? headerImages.closeMenu : headerImages.hamburgerMenu}
+							width={24}
+							height={19}
+							alt="Hamburger menu"
+						/>
 					</button>
 					<nav className="site-header__nav">
 						<ul className="site-header__list">

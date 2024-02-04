@@ -26,6 +26,10 @@
 	}
 }
 
+.site-header__menu-img {
+	height: 19px;
+}
+
 .site-header__nav {
 	display: none;
 }
@@ -56,12 +60,7 @@
 }
 
 .site-header__menu {
-	position: absolute;
-	top: 100%;
-	right: 0;
-	width: 223px;
-	padding: 40px 0;
-	background-color: #33323d;
+	display: none;
 }
 
 .site-header__menu-list {
@@ -81,7 +80,7 @@
 
 @media only screen and (max-width: 768px) {
 	.site-header__menu-btn {
-		display: block;
+		.flex-box(center);
 		padding: 15px;
 		.unstyled-btn();
 		border-radius: 8px;
@@ -95,6 +94,16 @@
 			background-color: rgba(0, 0, 0, 0.09);
 			transform: scale(0.92);
 		}
+	}
+
+	.site-header__menu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		display: block;
+		width: 223px;
+		padding: 40px 0;
+		background-color: #33323d;
 	}
 }
 
