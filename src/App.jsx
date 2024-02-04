@@ -8,7 +8,9 @@ function App() {
 			<Header />
 			<main className="site-main">
 				<Routes>
-					<Route />
+					<Route index element={<h1>Home</h1>} />
+					<Route path="portfolio" element={<h1>portfolio</h1>} />
+					<Route path="contact" element={<h1>contact</h1>} />
 				</Routes>
 			</main>
 			<Footer />
