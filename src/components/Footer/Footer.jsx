@@ -45,7 +45,7 @@ export const Footer = () => {
 							<a
 								className="site-footer__social-link"
 								href="https://github.com/rahmatulloh19"
-								target="blank">
+								target="_blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.github}
@@ -59,7 +59,7 @@ export const Footer = () => {
 							<a
 								className="site-footer__social-link"
 								href="https://t.me/nineteen_uz"
-								target="blank">
+								target="_blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.telegram}
@@ -73,7 +73,7 @@ export const Footer = () => {
 							<a
 								className="site-footer__social-link"
 								href="https://www.linkedin.com/in/raxmonov-rahmatulloh"
-								target="blank">
+								target="_blank">
 								<img
 									className="site-footer__social-img"
 									src={globalImages.linkedin}
