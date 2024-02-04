@@ -1,15 +1,27 @@
 import logo from "./logo.svg";
-import logoMobile from "./logoMobile.svg";
+import logoWhite from "./logowhite.svg";
+import logoMobile from "./logomobile.svg";
+import logoMobileWhite from "./logomobilewhite.svg";
 import hamburgerMenu from "./hamburgermenu.svg";
 import closeMenu from "./closemenu.svg";
-// import logo from "./logo.svg";
-// import logo from "./logo.svg";
+import github from "./github.svg";
+import telegram from "./telegram.svg";
+import linkedin from "./linkedin.svg";
 
 export const headerImages = {
 	logo: logo,
 	logoMobile: logoMobile,
 	hamburgerMenu: hamburgerMenu,
 	closeMenu: closeMenu,
-	// logo: "../../images/logo.svg",
-	// logo: "../../images/logo.svg",
+};
+
+export const footerImages = {
+	logoWhite: logoWhite,
+	logoMobileWhite: logoMobileWhite,
+};
+
+export const globalImages = {
+	github: github,
+	telegram: telegram,
+	linkedin: linkedin,
 };

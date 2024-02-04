@@ -4,15 +4,23 @@
 	align-items: @ai;
 }
 
+.reuseFulText(@mb: 0, @fz:16px, @fw: 400, @lh: normal) {
+	margin-top: 0;
+	margin-bottom: @mb;
+	font-size: @fz;
+	font-weight: @fw;
+	line-height: @lh;
+}
+
 .unstyled-btn() {
 	background-color: transparent;
 	border: none;
 	outline: none;
 }
 
-.unstyled-list() {
+.unstyled-list(@mb: 0) {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: @mb;
 	padding-left: 0;
 	list-style-type: none;
 }

@@ -1,0 +1,41 @@
+@import "../../assets/mixins/mixin.less";
+
+// Site footer styles begin
+
+.site-footer {
+	padding: 56px 0;
+	background-color: #33323d;
+}
+
+.site-footer__inner {
+	.flex-box();
+	flex-direction: column;
+}
+
+.site-footer__logo {
+	margin-bottom: 37px;
+}
+
+.site-footer__list {
+	display: flex;
+	align-items: center;
+	row-gap: 32px;
+	flex-direction: column;
+	.unstyled-list(40px);
+}
+
+.site-footer__link {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 2px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.site-footer__social-list {
+	.flex-box();
+	width: 104px;
+	.unstyled-list();
+}
+
+// Site footer styles end
