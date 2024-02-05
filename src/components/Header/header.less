@@ -3,7 +3,7 @@
 // Site-header styles begin
 
 .site-header {
-	padding: 30px 0;
+	padding: 30px 0 39px;
 }
 
 .site-header__inner {
@@ -109,6 +109,11 @@
 
 #responsive-header() {
 	.tablet() {
+		.site-header {
+			padding-top: 62px;
+			padding-bottom: 46px;
+		}
+
 		.site-header__menu-btn {
 			display: none;
 		}
@@ -117,10 +122,19 @@
 			display: block;
 		}
 	}
+	.desktop() {
+		.site-header {
+			padding-top: 64px;
+			padding-bottom: 54px;
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	#responsive-header.tablet();
+}
+@media only screen and (min-width: 1024px) {
+	#responsive-header.desktop();
 }
 
 // Site header styles end

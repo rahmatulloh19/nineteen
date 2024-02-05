@@ -9,6 +9,11 @@ import telegram from "./telegram.svg";
 import linkedin from "./linkedin.svg";
 import heroImage from "./homeheroimg.png";
 import heroImage2x from "./homeheroimg@2x.png";
+import heroTabletImage from "./homeherotabletimg.png";
+import heroTabletImage2x from "./homeherotabletimg@2x.png";
+import heroDesktopImage from "./homeherodesktopimg.png";
+import heroDesktopImage2x from "./homeherodesktopimg@2x.png";
+import { HomeHeroLinkImg } from "./homeherolinkimg";
 
 export const headerImages = {
 	logo: logo,
@@ -31,4 +36,9 @@ export const globalImages = {
 export const homeImages = {
 	heroImage: heroImage,
 	heroImage2x: heroImage2x,
+	heroTabletImage: heroTabletImage,
+	heroTabletImage2x: heroTabletImage2x,
+	heroDesktopImage: heroDesktopImage,
+	heroDesktopImage2x: heroDesktopImage2x,
+	heroLinkImage: () => <HomeHeroLinkImg />,
 };

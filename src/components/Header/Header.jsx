@@ -20,7 +20,7 @@ export const Header = () => {
 								srcSet={headerImages.logo}
 								width={194}
 								height={50}
-								media="(min-width: 1080px)"
+								media="(min-width: 1024px)"
 							/>
 							<img
 								src={headerImages.logoMobile}

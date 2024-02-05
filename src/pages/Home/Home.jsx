@@ -1,3 +1,18 @@
+import { Hero } from "../../components";
+import { homeImages } from "../../assets/images";
+
 export const Home = () => {
-	return <section className="site-main__hero hero"></section>;
+	return (
+		<>
+			<Hero
+				img={homeImages.heroImage}
+				imgRetina={homeImages.heroImage2x}
+				imgTablet={homeImages.heroTabletImage}
+				imgTabletRetina={homeImages.heroTabletImage2x}
+				imgDesktop={homeImages.heroDesktopImage}
+				imgDesktopRetina={homeImages.heroDesktopImage2x}
+				title={"Hey, I’m Rahmatullah Rakhmanov and I love building beautiful websites"}
+			/>
+		</>
+	);
 };

@@ -1,0 +1,110 @@
+@import "../../assets/utilities/mixins.less";
+
+// Hero styles begin
+
+.hero {
+	padding-bottom: 96px;
+}
+
+.hero__inner {
+	.flex-box(center);
+	flex-direction: column;
+}
+
+.hero__picture {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.hero__img {
+	max-width: 311px;
+	width: 100%;
+}
+
+.hero__content {
+	max-width: 513px;
+	margin: 0 auto;
+}
+
+.hero__title {
+	.reuseFulText(32px, 22px, 700, 42px);
+	font-family: "Ibarra Real Nova";
+	letter-spacing: -0.3571428656578064px;
+}
+
+.hero__link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 38px;
+	padding-right: 38px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 2px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #203a4c;
+}
+
+#responsive() {
+	.mobile() {
+		.hero__title {
+			font-size: 40px;
+		}
+	}
+
+	.tablet() {
+		.hero {
+			padding-bottom: 96px;
+		}
+		.hero__inner {
+			position: relative;
+		}
+		.hero__img {
+			max-width: 688px;
+		}
+		.hero__content {
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 345px);
+			min-width: 514px;
+			padding-top: 56px;
+			background-color: #fff;
+		}
+	}
+	.desktop() {
+		.hero {
+			padding-bottom: 150px;
+		}
+		.hero__img {
+			max-width: none;
+			width: 100%;
+		}
+		.hero__content {
+			left: -1px;
+			min-width: 630px;
+			padding-top: 56px;
+			padding-right: 55px;
+		}
+
+		.hero__title {
+			font-size: 50px;
+			line-height: 50px;
+			letter-spacing: -0.4464285671710968px;
+		}
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	#responsive.mobile();
+}
+
+@media only screen and (min-width: 768px) {
+	#responsive.tablet();
+}
+@media only screen and (min-width: 1024px) {
+	#responsive.desktop();
+}
+
+// Hero styles end
