@@ -1,0 +1,104 @@
+@import "../../assets/utilities/mixins.less";
+
+// About styles started
+
+.about__picture {
+	display: block;
+	margin-bottom: 32px;
+}
+
+.about__img {
+	max-width: 311px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.about__content {
+	max-width: 513px;
+	margin: 0 auto;
+	padding: 32px 0 51px;
+	border-top: 1px solid #33323d26;
+	border-bottom: 1px solid #33323d26;
+}
+
+.about__title {
+	.reuseFulText(28px, 28px, 700, 42px);
+	font-family: "Ibarra Real Nova";
+	letter-spacing: -0.36px;
+}
+
+.about__desc {
+	.reuseFulText(24px, 13px, @lh:30px);
+}
+
+.about__link {
+	display: inline-block;
+	padding: 17px 36px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 2px;
+	border: 1px solid #33323d;
+	text-decoration: none;
+	color: inherit;
+	.transition();
+	transition-property: opacity, background-color, color;
+	&:hover {
+		background-color: #33323d;
+		color: #fff;
+	}
+	&:active {
+		opacity: 0.8;
+	}
+}
+
+#responsive-about() {
+	.mobile() {
+		.about__title {
+			font-size: 40px;
+		}
+		.about__desc {
+			font-size: 16px;
+		}
+	}
+	.tablet() {
+		.about {
+			padding-bottom: 96px;
+		}
+		.about__inner {
+			.flex-box();
+		}
+		.about__picture {
+			margin-bottom: 0;
+		}
+		.about__img {
+			max-width: 281px;
+		}
+		.about__content {
+			max-width: 313px;
+			margin: 0;
+			padding-top: 51px;
+			padding-bottom: 46px;
+		}
+	}
+	.desktop() {
+		.about__inner {
+			justify-content: flex-start;
+			column-gap: 125px;
+		}
+		.about__img {
+			max-width: 533px;
+		}
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	#responsive-about.mobile();
+}
+
+@media only screen and (min-width: 768px) {
+	#responsive-about.tablet();
+}
+
+@media only screen and (min-width: 1024px) {
+	#responsive-about.desktop();
+} // About styles finished;

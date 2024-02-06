@@ -14,7 +14,12 @@ import heroTabletImage2x from "./homeherotabletimg@2x.png";
 import heroDesktopImage from "./homeherodesktopimg.png";
 import heroDesktopImage2x from "./homeherodesktopimg@2x.png";
 import { HomeHeroLinkImg } from "./HomeHeroLinkImg";
-2;
+import aboutImage from "./me.png";
+import aboutImage2x from "./me@2x.png";
+import aboutTabletImage from "./metablet.png";
+import aboutTabletImage2x from "./metablet@2x.png";
+import aboutDesktopImage from "./medesktop.png";
+import aboutDesktopImage2x from "./medesktop@2x.png";
 
 export const headerImages = {
 	logo: logo,
@@ -42,4 +47,13 @@ export const homeImages = {
 	heroDesktopImage: heroDesktopImage,
 	heroDesktopImage2x: heroDesktopImage2x,
 	HomeHeroLinkImg: () => <HomeHeroLinkImg />,
+};
+
+export const aboutImages = {
+	aboutImage: aboutImage,
+	aboutImage2x: aboutImage2x,
+	aboutTabletImage: aboutTabletImage,
+	aboutTabletImage2x: aboutTabletImage2x,
+	aboutDesktopImage: aboutDesktopImage,
+	aboutDesktopImage2x: aboutDesktopImage2x,
 };
