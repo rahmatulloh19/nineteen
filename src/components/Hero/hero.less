@@ -45,6 +45,25 @@
 	color: #fff;
 	text-decoration: none;
 	background-color: #203a4c;
+	.transition();
+	transition-property: background-color, opacity, color;
+	& svg {
+		color: #5fb4a2;
+	}
+	&:hover svg {
+		color: #fff;
+	}
+	&:active svg {
+		color: #5fb4a2;
+	}
+
+	&:hover {
+		background-color: #5fb4a2;
+	}
+	&:active {
+		background-color: #203a4c;
+		opacity: 0.8;
+	}
 }
 
 #responsive() {

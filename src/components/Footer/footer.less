@@ -12,6 +12,18 @@
 	flex-direction: column;
 }
 
+.site-footer__logo {
+	.transition();
+	transition-property: opacity, transform;
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		transform: scale(0.97);
+		opacity: 0.6;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.site-footer__logo {
 		margin-bottom: 37px;
@@ -32,12 +44,32 @@
 	letter-spacing: 2px;
 	color: #fff;
 	text-decoration: none;
+	.transition();
+	transition-property: opacity;
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
 }
 
 .site-footer__social-list {
 	.flex-box();
 	width: 104px;
 	.unstyled-list();
+}
+
+.site-footer__social-link {
+	.transition();
+	transition-property: opacity, transform;
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		transform: scale(0.97);
+		opacity: 0.6;
+	}
 }
 
 #responsive-footer() {
