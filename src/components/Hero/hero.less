@@ -46,7 +46,10 @@
 	text-decoration: none;
 	background-color: #203a4c;
 	.transition();
-	transition-property: background-color, opacity, color;
+	transition-property: background-color, opacity;
+	& svg {
+		transition: color 0.3s linear;
+	}
 	& svg {
 		color: #5fb4a2;
 	}
