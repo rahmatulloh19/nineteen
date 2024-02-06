@@ -1,5 +1,5 @@
 import { aboutImages, homeImages } from "../../assets/images";
-import { About, Hero } from "../../components";
+import { About, ForwardContact, Hero } from "../../components";
 
 export const Home = () => {
 	return (
@@ -24,6 +24,7 @@ export const Home = () => {
 					"I’m a front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices, and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in Tashkent, Uzbekistan but I will be happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love meeting with my friends, thinking about making new projects, spending time with my family, and love healthy conversations"
 				}
 			/>
+			<ForwardContact />
 		</>
 	);
 };
