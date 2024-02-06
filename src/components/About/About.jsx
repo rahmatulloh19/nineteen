@@ -11,7 +11,7 @@ export const About = ({
 	desc,
 }) => {
 	return (
-		<section className="site-main__about about">
+		<section className="site-main__about about" id="about">
 			<div className="container">
 				<div className="about__inner">
 					<picture className="about__picture">
