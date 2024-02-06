@@ -1,5 +1,5 @@
-import { Hero } from "../../components";
 import { homeImages } from "../../assets/images";
+import { Hero } from "../../components";
 
 export const Home = () => {
 	return (

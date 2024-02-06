@@ -13,7 +13,7 @@ import heroTabletImage from "./homeherotabletimg.png";
 import heroTabletImage2x from "./homeherotabletimg@2x.png";
 import heroDesktopImage from "./homeherodesktopimg.png";
 import heroDesktopImage2x from "./homeherodesktopimg@2x.png";
-import { HomeHeroLinkImg } from "./homeherolinkimg";
+2;
 
 export const headerImages = {
 	logo: logo,
@@ -40,5 +40,4 @@ export const homeImages = {
 	heroTabletImage2x: heroTabletImage2x,
 	heroDesktopImage: heroDesktopImage,
 	heroDesktopImage2x: heroDesktopImage2x,
-	heroLinkImage: () => <HomeHeroLinkImg />,
 };

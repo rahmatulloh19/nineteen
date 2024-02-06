@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./hero.less";
-import { homeImages } from "../../assets/images";
+import { HomeHeroLinkImg } from "../../assets/images/homeherolinkimg";
 
 export const Hero = ({
 	img,
@@ -46,7 +46,7 @@ export const Hero = ({
 					<div className="hero__content">
 						<h1 className="hero__title">{title}</h1>
 						<Link className="hero__link" to="/contact">
-							{homeImages.heroLinkImage()}
+							<HomeHeroLinkImg />
 							ABOUT ME
 						</Link>
 					</div>
