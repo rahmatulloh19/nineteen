@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./hero.less";
-import { HomeHeroLinkImg } from "../../assets/images/homeherolinkimg";
+import { HomeHeroLinkImg } from "../../assets/images/HomeHeroLinkImg";
 
 export const Hero = ({
 	img,
