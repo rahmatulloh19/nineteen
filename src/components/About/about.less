@@ -31,9 +31,15 @@
 	.reuseFulText(24px, 13px, @lh:30px);
 }
 
+.about__links-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 20px;
+}
+
 .about__link {
 	display: inline-block;
-	padding: 17px 36px;
+	padding: 17px 20px;
 	font-size: 12px;
 	line-height: 14px;
 	letter-spacing: 2px;
@@ -47,6 +53,19 @@
 		color: #fff;
 	}
 	&:active {
+		opacity: 0.8;
+		transform: scale(0.92);
+	}
+	&--resume {
+		background-color: #33323d;
+		color: #fff;
+	}
+
+	&--resume:hover {
+		background-color: #fff;
+		color: #33323d;
+	}
+	&--resume:active {
 		opacity: 0.8;
 		transform: scale(0.92);
 	}

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import "./about.less";
+import { Link } from "react-router-dom";
 
 export const About = ({
 	img,
@@ -43,9 +43,17 @@ export const About = ({
 					<div className="about__content">
 						<h2 className="about__title">About Me</h2>
 						<p className="about__desc">{desc}</p>
-						<Link className="about__link" to="/portfolio">
-							GO TO PORTFOLIO
-						</Link>
+						<div className="about__links-wrapper">
+							<Link className="about__link" to="/portfolio">
+								GO TO PORTFOLIO
+							</Link>
+							<a
+								className="about__link about__link--resume"
+								href="https://drive.google.com/file/d/1eGJdS6VltET6iJDkyYMRqzWqD2EG8E9e/view"
+								target="_blank">
+								HIRE ME
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
