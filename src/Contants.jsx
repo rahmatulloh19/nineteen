@@ -2,7 +2,7 @@ import Manage from "./assets/images/Manage.svg";
 import Bookmark from "./assets/images/Bookmark.svg";
 import Insure from "./assets/images/Insure.svg";
 
-export const Projects_list = [
+export const projects_list = [
 	{
 		id: 1,
 		title: "Manage",
