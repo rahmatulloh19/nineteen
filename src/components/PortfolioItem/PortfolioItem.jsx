@@ -8,7 +8,7 @@ export const PortfolioItem = ({ title, img, desc, id }) => {
 			<div className="list__main-list-content">
 				<h3 className="list__main-list-title">{title}</h3>
 				<p className="list__main-list-desc">{desc}</p>
-				<Link to={`/single-page:${id}`} className="list__main-list-link">
+				<Link to={`/single-page/${id}`} className="list__main-list-link">
 					VIEW PROJECT
 				</Link>
 			</div>
