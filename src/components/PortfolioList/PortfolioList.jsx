@@ -1,5 +1,5 @@
 import "./portfolioList.less";
-import { Projects_list } from "../../contants";
+import { projects_list } from "../../contants";
 import { PortfolioItem } from "../PortfolioItem";
 
 export const PortfolioList = () => {
@@ -7,7 +7,7 @@ export const PortfolioList = () => {
 		<section className="site-main__list list">
 			<div className="container">
 				<ul className="list__main-list">
-					{Projects_list.map((item) => (
+					{projects_list.map((item) => (
 						<PortfolioItem key={item.id} {...item} />
 					))}
 				</ul>
