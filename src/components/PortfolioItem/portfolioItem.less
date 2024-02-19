@@ -12,4 +12,22 @@
 	border-bottom: 1px solid #33323d;
 }
 
-// Portfolio Item styles end
+.list__main-list-content {
+	padding-top: 25px;
+	.reuseFulText(24px, 28px, 700, 42px);
+	font-family: "Ibarra Real Nova";
+}
+
+#responsive-portfolio-item() {
+	.mobile() {
+		.list__main-list-content {
+			font-size: 40px;
+		}
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	#responsive-portfolio-item.mobile();
+}
+
+// Portfolio Item styles end;
