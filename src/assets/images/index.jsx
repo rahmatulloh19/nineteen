@@ -20,6 +20,11 @@ import aboutTabletImage from "./metablet.png";
 import aboutTabletImage2x from "./metablet@2x.png";
 import aboutDesktopImage from "./medesktop.png";
 import aboutDesktopImage2x from "./medesktop@2x.png";
+import { Manage } from "./Manage";
+import { Bookmark } from "./Bookmark";
+import { Insure } from "./Insure";
+
+export { Manage, Bookmark, Insure };
 
 export const headerImages = {
 	logo: logo,

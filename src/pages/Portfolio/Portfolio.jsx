@@ -1,3 +1,9 @@
+import { PortfolioList } from "../../components";
+
 export const Portfolio = () => {
-	return <div>Portfolio</div>;
+	return (
+		<>
+			<PortfolioList />
+		</>
+	);
 };
