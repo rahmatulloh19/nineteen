@@ -1,10 +1,30 @@
 @import "../../assets/utilities/mixins.less";
+@import "../../assets/utilities/articleSetting.less";
 
 // Portfolio List styles begin
 .list__main-list {
 	display: flex;
 	flex-direction: column;
 	.unstyled-list();
+}
+
+.list__article {
+	.article(80px, 80px);
+}
+
+@media only screen and (min-width: 768px) {
+	.list__main-list {
+		row-gap: 80px;
+	}
+	.list__article {
+		.article(96px, 96px);
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.list__article {
+		.article(150px, 150px);
+	}
 }
 
 // Portfolio List styles end

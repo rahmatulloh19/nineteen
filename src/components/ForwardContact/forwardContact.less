@@ -1,9 +1,9 @@
 @import "../../assets/utilities/mixins.less";
+@import "../../assets/utilities/articleSetting.less";
 
 // Site article styles begin
-.article {
-	padding-top: 115px;
-	padding-bottom: 80px;
+.site-main__article {
+	.article(115px, 80px);
 }
 
 .article__inner {
@@ -50,10 +50,10 @@
 		}
 	}
 	.tablet() {
-		.article {
-			padding-top: 0;
-			padding-bottom: 96px;
+		.site-main__article {
+			.article(0, 96px);
 		}
+
 		.article__inner {
 			justify-content: space-between;
 			flex-direction: row;

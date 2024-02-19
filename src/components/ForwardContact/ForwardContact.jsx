@@ -1,9 +1,9 @@
 import "./forwardContact.less";
 import { Link } from "react-router-dom";
 
-export const ForwardContact = () => {
+export const ForwardContact = ({ additionalClass }) => {
 	return (
-		<article className="site-main__article article">
+		<article className={`${additionalClass} article`}>
 			<div className="container">
 				<div className="article__inner">
 					<div className="article__title-wrapper">

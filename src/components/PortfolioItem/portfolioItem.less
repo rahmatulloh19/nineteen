@@ -1,33 +1,112 @@
 @import "../../assets/utilities/mixins.less";
+@import "../../assets/utilities/link.less";
 
 // Portfolio Item styles begin
 
-// .list__main-list-item:nth-child(even) {
-// }
-
 .list__main-list-img {
+	max-width: 513px;
 	width: 100%;
 	height: auto;
-	padding-bottom: 32px;
-	border-bottom: 1px solid #33323d;
+	margin-inline: auto;
+	margin-bottom: 32px;
 }
 
 .list__main-list-content {
-	padding-top: 25px;
+	max-width: 513px;
+	margin-inline: auto;
+	margin-bottom: 72px;
+	padding-block: 24px;
+	border-block: 1px solid #ddddde;
+}
+
+.list__main-list-title {
 	.reuseFulText(24px, 28px, 700, 42px);
 	font-family: "Ibarra Real Nova";
+	letter-spacing: -0.36px;
+}
+
+.list__main-list-desc {
+	.reuseFulText(24px, 15px, @lh:30px);
+}
+
+.list__main-list-link {
+	.link();
+	max-width: fit-content;
+}
+
+.list__main-list-item:last-child .list__main-list-content {
+	margin-bottom: 0;
 }
 
 #responsive-portfolio-item() {
 	.mobile() {
-		.list__main-list-content {
+		.list__main-list-title {
 			font-size: 40px;
+		}
+	}
+	.tablet() {
+		.list__main-list-item {
+			display: flex;
+			align-items: center;
+			column-gap: 69px;
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+		}
+
+		.list__main-list-img {
+			max-width: 334px;
+			width: auto;
+			height: 314px;
+			margin: 0;
+			flex-grow: 1;
+			flex-shrink: 0;
+		}
+
+		.list__main-list-content {
+			max-width: 350px;
+			margin: 0;
+			padding-block: 32px;
+			flex-grow: 1;
+		}
+	}
+	.desktop() {
+		.list__main-list-item {
+			column-gap: 125px;
+			align-items: stretch;
+		}
+
+		.list__main-list-img {
+			max-width: 540px;
+			max-height: 500px;
+			height: 100%;
+		}
+
+		.list__main-list-content {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.list__main-list-title {
+			margin-top: auto;
+		}
+
+		.list__main-list-link {
+			margin-bottom: auto;
 		}
 	}
 }
 
 @media only screen and (min-width: 375px) {
 	#responsive-portfolio-item.mobile();
+}
+
+@media only screen and (min-width: 768px) {
+	#responsive-portfolio-item.tablet();
+}
+
+@media only screen and (min-width: 1024px) {
+	#responsive-portfolio-item.desktop();
 }
 
 // Portfolio Item styles end;
