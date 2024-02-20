@@ -39,7 +39,7 @@ export const Hero = ({
 							width={311}
 							height={271}
 							alt="Hero image"
-							srcSet={`${img}  1x, ${imgRetina}  2x`}
+							srcSet={`${img} 1x, ${imgRetina} 2x`}
 						/>
 					</picture>
 					<div className="hero__content">

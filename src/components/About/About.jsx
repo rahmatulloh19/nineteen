@@ -19,7 +19,7 @@ export const About = ({
 						{/* Images after 1024px */}
 						<source
 							media="(min-width: 1024px)"
-							srcset={`${imgDesktop} 1x, ${imgDesktopRetina} 2x`}
+							srcSet={`${imgDesktop} 1x, ${imgDesktopRetina} 2x`}
 							width={533}
 							height={592}
 						/>
@@ -27,7 +27,7 @@ export const About = ({
 						{/* Images after 768px */}
 						<source
 							media="(min-width: 768px)"
-							srcset={`${imgTablet} 1x, ${imgTabletRetina} @2x`}
+							srcSet={`${imgTablet} 1x, ${imgTabletRetina} 2x`}
 							width={281}
 							height={600}
 						/>
@@ -38,7 +38,7 @@ export const About = ({
 							width="311"
 							height="346"
 							alt="My picture"
-							srcSet={`${img}  1x, ${imgRetina}  2x`}></img>
+							srcSet={`${img} 1x, ${imgRetina} 2x`}></img>
 					</picture>
 					<div className="about__content">
 						<h2 className="about__title">About Me</h2>
